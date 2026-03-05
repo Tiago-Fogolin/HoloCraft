@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoloCraft Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HoloCraft Dashboard</h1>
+        <p>Construa e visualize hologramas Minecraft!</p>
+    </header>
+
+    <main>
+        <section id="drawing-section">
+            <h2>Desenhe sua Construção</h2>
+            <div id="tools">
+                <label for="color-picker">Cor:</label>
+                <input type="color" id="color-picker" value="#00ff00">
+                <button id="clear-canvas">Limpar</button>
+                <button id="send-live">Enviar para Live</button>
+            </div>
+            <canvas id="drawing-canvas" width="240" height="320"></canvas>
+        </section>
+
+        <section id="saved-constructions">
+            <h2>Construções Salvas</h2>
+            <div id="constructions-list"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

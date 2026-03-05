@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #8B4513;
+    border-bottom: 2px solid #228B22;
+    padding-bottom: 10px;
+}
+
+#tools {
+    margin-bottom: 20px;
+}
+
+#tools label {
+    margin-right: 10px;
+}
+
+#tools input, #tools button {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#tools button {
+    background-color: #228B22;
+    color: white;
+    cursor: pointer;
+}
+
+#tools button:hover {
+    background-color: #32CD32;
+}
+
+canvas {
+    border: 2px solid #8B4513;
+    background-color: #F5F5DC;
+    display: block;
+    margin: 0 auto;
+    image-rendering: pixelated;
+}
+
+#constructions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.construction-item {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 240px;
+    text-align: center;
+}
+
+.construction-item canvas {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+}
+
+.construction-item p {
+    margin: 10px 0 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
