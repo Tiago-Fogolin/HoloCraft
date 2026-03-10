@@ -140,9 +140,9 @@ async function loadSavedConstructions() {
             itemDiv.className = 'construction-item';
             
             const canvas = document.createElement('canvas');
-            const scale = 2; // ampliar para 480x640
-            canvas.width = 240 * scale;
-            canvas.height = 320 * scale;
+            const scale = 2; // ampliar para 640x480
+            canvas.width = 320 * scale;
+            canvas.height = 240 * scale;
             const ctx = canvas.getContext('2d');
             
             ctx.fillStyle = '#F5F5DC';

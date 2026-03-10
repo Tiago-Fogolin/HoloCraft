@@ -38,7 +38,9 @@ app.add_middleware(
 )
 
 # Conexão com MongoDB
-client = MongoClient("mongodb://localhost:27017/")
+import os
+mongo_url = os.getenv("MONGO_URL", "mongodb://localhost:27017/")
+client = MongoClient(mongo_url)
 db = client["holocraft"]
 live_collection = db["live_constructions"]
 saved_collection = db["saved_constructions"]
